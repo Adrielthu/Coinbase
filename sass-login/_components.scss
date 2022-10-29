@@ -1,0 +1,59 @@
+$color-main: rgb(55,115,245);
+@mixin btn-main {
+    text-align: center;
+    padding: 1.1rem;
+    font-size: 14pt;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    &:hover{
+        opacity:0.8 ;
+    }
+}
+.container-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4.5rem;
+}
+.container{
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    padding-bottom: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    @include btn-main();
+    background-color:$color-main;
+}
+.btn-a{
+    @include btn-main();
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+img{
+    width: 126px
+}
+.section-politic{
+    padding-bottom: 2.5rem;
+    .div-a{
+        padding-top: 0.5rem;
+        
+    }
+    a{  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#0075FF;
+    }
+}

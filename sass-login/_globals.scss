@@ -1,0 +1,55 @@
+$color-main: rgb(55,115,245);
+
+body{
+    background-color: rgb(10,11,13);
+}
+.section-inptus {
+    display: flex;
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.section-inputs label input{
+    width:91%;
+    background-color:  rgb(10, 10, 10);
+    border: 1px solid  rgb(114, 114, 114);
+    padding: 1rem;
+    color:black;
+}
+label input:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+label input:focus {
+    background-color: rgb(10, 10, 10);
+    border: solid 1px $color-main;
+}
+
+label input{
+    width:100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    &:focus{
+        background-color: rgb(10, 10, 10);
+        border: solid 1px $color-main;
+    }
+}
+h1{
+    margin: 0 7.4rem 0 0;
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
+    color: white;
+    
+}
+span{
+    color:white
+}
+
+.container-img{
+    position: absolute;
+    top: 6.9rem;
+    left: 31rem;
+}
